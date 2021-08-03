@@ -340,7 +340,7 @@
                
           </div>
           <div class="col-md-6">
-            <img src="img/brand.jpg" class="card-img-top"  data-aos="slide-right" data-aos-duration="1000">
+            <img src="img/brand1.jpg" class="card-img-top"  data-aos="slide-right" data-aos-duration="1000">
           </div>
      </div>
 </div>
