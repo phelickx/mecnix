@@ -1,0 +1,428 @@
+/* Navbar styles */
+body {
+    background-color: #010203;
+    font-family: 'Saira', sans-serif;
+    color: rgb(245, 236, 220);
+    overflow-x: hidden;
+}
+
+.nav {
+  border-radius: 62px;
+  border: 1px solid rgba(203, 200, 200, 0.21);
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(20.5px);
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px;
+  width: 70%;
+  margin: 20px auto;
+  z-index: 100;
+}
+.vc {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav .navRight {
+  justify-content: space-between;
+}
+.navRights {
+  display: none;
+}
+.nav .navRight .navLinks {
+  margin-left: 45px;
+  color: white;
+  font-size: 12px;
+}
+.logo {
+  margin-left: 10px;
+}
+.icon {
+  display: none;
+}
+.mainButton {
+  border-radius: 39px;
+  background: linear-gradient(267deg, #06F -44.97%, #F0A 47.85%, #FFAA01 155.82%);
+  color: white;
+  padding: 12px 30px;
+  font-size: 12px;
+  text-align: center;
+}
+.secButton {
+  border-radius: 39px;
+  background: black;
+  color: white;
+  padding: 15px 30px;
+  font-size: 12px;
+  text-align: center;
+}
+.sec2Button {
+  border-radius: 39px;
+  background: rgba(255, 255, 255, 0.044);
+  color: white;
+  padding: 10px 30px;
+  font-size: 12px;
+  text-align: center;
+}
+.sec3Button {
+  border-radius: 39px;
+  background: rgba(251, 251, 251);
+  color: rgb(12, 12, 12);
+  padding: 10px 30px;
+  font-size: 12px;
+  text-align: center;
+}
+.text {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.text h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.text p {
+  padding: 10px;
+  font-weight: 200;
+}
+header {
+  background: #101010; 
+  flex-shrink: 0;
+  background-image: url("../img/Group 16.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.world3 {
+  margin: 100px 0px auto -500px;
+  width: 140px;
+  animation: rotate-clockwise 10s linear infinite;
+}
+.world2 {
+  margin: 200px 0px auto 300px;
+  width: 80px;
+  z-index: 100;
+  animation: rotate-anti-clockwise 10s linear infinite;
+}
+.world1 {
+  /* animation: rotate-clockwise 6s linear infinite;  */
+  animation: zoom-rotate 20s infinite alternate; 
+  transform-origin: center;
+  z-index: 1;
+}
+@keyframes rotate-clockwise {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+@keyframes rotate-anti-clockwise {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(-360deg);
+  }
+}
+@keyframes zoom-rotate {
+  0% {
+      transform: scale(1) rotate(0deg);
+  }
+  100% {
+      transform: scale(-1) rotate(360deg);
+  }
+}
+.rock3 {
+  animation: moveUpDown 2s infinite alternate;
+}
+@keyframes moveUpDown {
+  0% {
+      transform: translateY(60); /* Start at the original position */
+  }
+  100% {
+      transform: translateY(-60px); /* Move up by 20 pixels */
+  }
+}
+.community {
+  border-radius: 20px;
+  background-image: url("../img/Frame 10.jpg");
+  padding: 40px 50px;
+  color: white;
+  margin-bottom: 30px;
+}
+.community p {
+  line-height: 0;
+}
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+h2 {
+color: #FFF;
+font-family: Saira;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 109.4%;
+}
+h5 {
+  color: #FFF;
+  font-family: Saira;
+  font-size: 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 109.4%;
+  }
+main {
+  background-image: url("../img/Frame\ 33.jpg");
+  background-attachment: fixed;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list .item {
+  padding: 2px 15px;
+  border: 1px solid white;
+  border-radius: 7px;
+  margin: 10px 10px 0 0;
+}
+.count {
+  border-radius: 20px;
+  border: 1px solid #4D4A4A;
+  background: #1A1A1B;
+  padding: 20px 30px;
+}
+.count h1 {
+  text-align: right;
+  font-size: 90px;
+}
+.count h2 {
+  margin-top: -1px;
+  font-size: 40px;
+}
+.services h2 {
+  text-align: center;
+}
+.texts {
+  padding: 20px;
+}
+p {
+  font-size: 20px;
+}
+.rock3 {
+  margin: -600px 0 0 140px;
+}
+.contain {
+  display: inline-flex;
+  padding: 44px 0px 31px 0px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 5px;
+}
+.serviceCard {
+  border-radius: 15px;
+  border: 1px solid #222;
+  background: #1A1919;
+  padding: 25px 15px;
+  margin: 10px;
+}
+.serviceCards {
+  border-radius: 15px;
+  border: 1px solid rgba(34, 34, 34, 0);
+  background: #1a191900;
+  padding: 25px 15px;
+  margin: 10px;
+}
+.serviceCard h3 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.serviceCard p {
+  font-size: 15px;
+  padding-bottom: 10px;
+
+}
+.serviceCards h3 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.serviceCards p {
+  font-size: 15px;
+  padding-bottom: 10px;
+
+}
+.partners {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.partners .pi {
+  width: 150px;
+  
+}
+.sss {
+  text-align: right;
+}
+.footer {
+  padding: 20px;
+}
+input[type="email"] {
+  width: 100%; /* Set the width of the input */
+  padding: 10px; /* Add padding for spacing */
+  border: 1px solid #3d3c3c;
+  background: #2827276e; /* Add a border */
+  border-radius: 63px; /* Add rounded corners */
+  font-size: 16px; /* Set font size */
+  color: rgb(218, 215, 215); /* Set text color */
+}
+input[type="email"]:focus {
+  border-color: #007bff; /* Change border color when in focus */
+  outline: none; /* Remove the default blue outline */
+}
+input{/* Set the width of the input */
+ /* Add padding for spacing */
+  border: none;
+  background: #2827276e; /* Add a border */
+  border-radius: 63px; /* Add rounded corners */
+  font-size: 16px; /* Set font size */
+  color: rgb(218, 215, 215); /* Set text color */
+}
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.ds {
+  text-align: right;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+.ds li {
+  margin: 10px 0;
+}
+.ds a {
+  color: white;
+}
+.footers {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.032);
+}
+.dss {
+  margin-bottom: 30px;
+}
+.cs {
+  width: 200px; /* Set a width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.dotted-line {
+  width: 1px; /* Set the width of the line */
+  height: 250px; /* Set the height of the line */
+  background: linear-gradient(to bottom, rgb(128, 127, 127) 50%, transparent 50%); /* Create a repeating dashed pattern */
+  background-size: 100% 20px; /* Adjust the dash spacing (10px in this example) */
+  background-repeat: repeat; /* Prevent repeating the pattern horizontally */
+  margin: 0 auto; /* Cen/* Center the dotted line within the container horizontally */
+}
+.blog {
+  text-align: right;
+}
+.cryptocafe {
+  text-align: left;
+}
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+  .nav {
+    width: 80%;
+  }
+  .contain {
+   flex-direction: column;
+  }
+  .partners .pi {
+    width: 50px;
+    flex-wrap: wrap;
+  }
+  .partners {
+    gap: px;
+  }
+  .rock3 {
+    margin: -600px 0 0 80px;
+  }
+  .community {
+    border-radius: 20px;
+    background-image: url("../img/Frame 10.jpg");
+    padding: 40px 20px;
+    color: white;
+  }
+  .navRights {
+    display: none;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(30.5px);
+    border-radius: 20px;
+    z-index: 100;
+    transition: top 0.5s ease-in-out;
+  }
+  .up {
+    margin-top: -200px;
+  }
+  .world3 {
+    margin: -180px 150px 0 0;
+    width: 140px;
+    animation: rotate-clockwise 10s linear infinite;
+  }
+  .world2 {
+    margin: 200px 0px auto 200px;
+    width: 80px;
+    z-index: 100;
+    animation: rotate-anti-clockwise 10s linear infinite;
+  }
+  .nav .navRight {
+    display: none;
+  }
+  .navRights.active {
+    display: flex;
+    margin-top: 0;
+
+  }
+  .icon {
+    margin-left: 50px;
+  }
+  .navRights .navLink {
+    margin-left: 0;
+    color: white;
+    font-size: 12px;
+    margin: 10px;
+  }
+  .icon {
+    display: block;
+    border: 1px solid ;
+    border: 1px solid rgba(203, 200, 200, 0.21);
+    background: rgba(255, 255, 255, 0.09);
+    padding: 9px 15px;
+    border-radius: 62px;
+  }
+  .text h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .text p {
+    padding: 10px 10px;
+    font-weight: 200;
+  }
+    
+  }
+  
